@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Admission Form</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f2f4f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 50%;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            margin-top: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px #ccc;
+        }
+
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #2980b9;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>College Admission Form</h2>
+
+    <form action="/submit" method="post">
+
+        <label>First Name</label>
+        <input type="text" name="firstName">
+
+        <label>Middle Name</label>
+        <input type="text" name="middleName">
+
+        <label>Last Name</label>
+        <input type="text" name="lastName">
+
+        <label>Father Name</label>
+        <input type="text" name="fatherName">
+
+        <label>Mother Name</label>
+        <input type="text" name="motherName">
+
+        <label>Email</label>
+        <input type="email" name="email">
+
+        <label>Mobile Number</label>
+        <input type="text" name="mobileNumber">
+
+        <label>10th Percentage</label>
+        <input type="text" name="tenthPercentage">
+
+        <label>12th Percentage</label>
+        <input type="text" name="twelfthPercentage">
+
+        <label>Course</label>
+        <select name="course">
+            <option>BCA</option>
+            <option>B.Tech</option>
+            <option>BBA</option>
+            <option>B.Com</option>
+        </select>
+
+        <button type="submit">Submit Application</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
